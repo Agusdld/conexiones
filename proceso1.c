@@ -19,13 +19,13 @@ int main(void) {
 	if (connect(cliente, (struct sockaddr*) &direccionDelServidor, sizeof(direccionDelServidor)) != 0){
 		perror("No se pudo conectar");
 	}
-
+	/*
 	while(1){
 		char mensaje[1000];
 		scanf("%s",mensaje);
 		send(cliente,mensaje,strlen(mensaje),0);
 	}
-
-	//send(cliente,"hola cliente",13,0);
+	 */
+	send(cliente,"hola cliente",13,0);
 	return 0;
 }
